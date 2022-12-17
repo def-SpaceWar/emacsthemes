@@ -81,29 +81,31 @@ Can be an integer to determine the exact padding."
    ;; These are the "universal syntax classes" that doom-themes establishes.
    ;; These *must* be included in every doom themes, or your theme will throw an
    ;; error, as they are used in the base theme defined in doom-themes-base.
-   (highlight      orange)
+   (highlight      magenta)
    (vertical-bar   (doom-lighten bg 0.1))
    (selection      base5)
-   (builtin        orange)
-   (comments       (if doom-newlife-lowcontrast-brighter-comments violet base5))
+   (builtin        magenta)
+   (comments       (if doom-newlife-lowcontrast-brighter-comments
+		       violet
+		     yellow))
    (doc-comments   (if doom-newlife-lowcontrast-brighter-comments
                        (doom-lighten violet 0.1)
-                     (doom-lighten base5 0.25)))
-   (constants      orange)
+                     dark-cyan))
+   (constants      blue)
    (functions      green)
-   (keywords       magenta)
-   (methods        cyan)
-   (operators      violet)
-   (type           cyan)
-   (strings        yellow)
-   (variables      orange)
-   (numbers        violet)
+   (keywords       red)
+   (methods        green)
+   (operators      red)
+   (type           teal)
+   (strings        dark-blue)
+   (variables      magenta)
+   (numbers        blue)
    (region         base4)
    (error          red)
    (warning        yellow)
    (success        green)
-   (vc-modified    cyan)
-   (vc-added       (doom-darken green 0.15))
+   (vc-modified    blue)
+   (vc-added       green)
    (vc-deleted     red)
 
    ;; These are extra color variables used only in this theme; i.e. they aren't
