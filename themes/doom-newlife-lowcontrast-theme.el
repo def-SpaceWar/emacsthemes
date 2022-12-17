@@ -150,18 +150,18 @@ Can be an integer to determine the exact padding."
    (doom-modeline-buffer-project-root :foreground green :weight 'bold)
    (doom-modeline-buffer-modified :inherit 'bold :foreground orange)
    ;;;; ediff <built-in>
-   (ediff-fine-diff-A :background (doom-blend magenta bg 0.3) :weight 'bold)
+   (ediff-fine-diff-A :background (doom-blend teal bg 0.3) :weight 'bold)
    ;;;; evil
-   (evil-search-highlight-persist-highlight-face :background violet)
+   (evil-search-highlight-persist-highlight-face :background magenta)
    ;;;; evil-snipe
    (evil-snipe-first-match-face :foreground base0 :background green)
    (evil-snipe-matches-face     :foreground green :underline t)
    ;;;; flycheck
    (flycheck-error   :underline `(:style wave :color ,red)    :background base3)
-   (flycheck-warning :underline `(:style wave :color ,yellow) :background base3)
-   (flycheck-info    :underline `(:style wave :color ,green)  :background base3)
+   (flycheck-warning :underline `(:style wave :color ,orange) :background base3)
+   (flycheck-info    :underline `(:style wave :color ,blue)  :background base3)
    ;;;; helm
-   (helm-swoop-target-line-face :foreground magenta :inverse-video t)
+   (helm-swoop-target-line-face :foreground red :inverse-video t)
    ;;;; ivy
    (ivy-current-match :background base3)
    (ivy-minibuffer-match-face-1 :background base1 :foreground base4)
@@ -175,22 +175,22 @@ Can be an integer to determine the exact padding."
    (neo-dir-link-face   :foreground cyan)
    (neo-expand-btn-face :foreground magenta)
    ;;;; outline <built-in>
-   ((outline-1 &override) :foreground magenta)
-   ((outline-2 &override) :foreground orange)
+   ((outline-1 &override) :foreground red)
+   ((outline-2 &override) :foreground teal)
    ;;;; org <built-in>
-   (org-ellipsis :foreground orange)
-   (org-tag :foreground yellow :bold nil)
+   (org-ellipsis :foreground teal)
+   (org-tag :foreground dark-blue :bold nil)
    ((org-quote &override) :foreground base7)
-   (org-todo :foreground yellow :bold 'inherit)
-   (org-list-dt :foreground yellow)
+   (org-todo :foreground dark-blue :bold 'inherit)
+   (org-list-dt :foreground dark-blue)
    ;;;; rainbow-delimiters
-   (rainbow-delimiters-depth-1-face :foreground magenta)
+   (rainbow-delimiters-depth-1-face :foreground red)
    (rainbow-delimiters-depth-2-face :foreground orange)
    (rainbow-delimiters-depth-3-face :foreground green)
-   (rainbow-delimiters-depth-4-face :foreground cyan)
-   (rainbow-delimiters-depth-5-face :foreground magenta)
-   (rainbow-delimiters-depth-6-face :foreground orange)
-   (rainbow-delimiters-depth-7-face :foreground green))
+   (rainbow-delimiters-depth-4-face :foreground teal)
+   (rainbow-delimiters-depth-5-face :foreground cyan)
+   (rainbow-delimiters-depth-6-face :foreground blue)
+   (rainbow-delimiters-depth-7-face :foreground dark-blue))
 
   ;;;; Base theme variable overrides
   ;; ()
