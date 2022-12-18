@@ -1,4 +1,4 @@
-;;; doom-newlife-lowcontrast-theme.el --- ported from Aryan Ahire's newlife colorscheme pack
+;;; doom-newlife-theme.el --- ported from Aryan Ahire's newlife colorscheme pack
 ;;
 ;; Added:
 ;; Author:
@@ -14,31 +14,31 @@
 ;;
 ;;; Variables
 
-(defgroup doom-newlife-lowcontrast-theme nil
-  "Options for the `doom-newlife-lowcontrast' theme."
+(defgroup doom-newlife-theme nil
+  "Options for the `doom-newlife' theme."
   :group 'doom-themes)
 
-(defcustom doom-newlife-lowcontrast-brighter-modeline nil
+(defcustom doom-newlife-brighter-modeline nil
   "If non-nil, more vivid colors will be used to style the mode-line."
-  :group 'doom-newlife-lowcontrast-theme
+  :group 'doom-newlife-theme
   :type 'boolean)
 
-(defcustom doom-newlife-lowcontrast-brighter-comments nil
+(defcustom doom-newlife-brighter-comments nil
   "If non-nil, comments will be highlighted in more vivid colors."
-  :group 'doom-newlife-lowcontrast-theme
+  :group 'doom-newlife-theme
   :type 'boolean)
 
-(defcustom doom-newlife-lowcontrast-padded-modeline doom-themes-padded-modeline
+(defcustom doom-newlife-padded-modeline doom-themes-padded-modeline
   "If non-nil, adds a 4px padding to the mode-line.
 Can be an integer to determine the exact padding."
-  :group 'doom-newlife-lowcontrast-theme
+  :group 'doom-newlife-theme
   :type '(choice integer boolean))
 
 
 ;;
 ;;; Theme definition
 
-(def-doom-theme doom-newlife-lowcontrast
+(def-doom-theme doom-newlife
   "A dark, vibrant theme inspired by Textmate's Monokai."
 
   ;; name        gui       256       16
@@ -55,28 +55,28 @@ Can be an integer to determine the exact padding."
    ;; These should represent a spectrum from bg to fg, where base0 is a starker
    ;; bg and base8 is a starker fg. For example, if bg is light grey and fg is
    ;; dark grey, base0 should be white and base8 should be black.
-   (base0      '("#03080D" "black"   "black"        ))
-   (base1      '("#12171C" "#101010" "brightblack"  ))
-   (base2      '("#21262B" "#191919" "brightblack"  ))
-   (base3      '("#32373C" "#252525" "brightblack"  ))
-   (base4      '("#43484D" "#454545" "brightblack"  ))
-   (base5      '("#6A6C7F" "#6b6b6b" "brightblack"  ))
-   (base6      '("#90909F" "#7b7b7b" "brightblack"  ))
-   (base7      '("#A0AFAF" "#c1c1c1" "brightblack"  ))
-   (base8      '("#B0BFBF" "#ffffff" "brightwhite"  ))
+   (base0      '("#0E1212" "black"   "black"        ))
+   (base1      '("#161919" "#101010" "brightblack"  ))
+   (base2      '("#1F2222" "#191919" "brightblack"  ))
+   (base3      '("#3E4444" "#252525" "brightblack"  ))
+   (base4      '("#5D6666" "#454545" "brightblack"  ))
+   (base5      '("#7F7F7F" "#6b6b6b" "brightblack"  ))
+   (base6      '("#989898" "#7b7b7b" "brightblack"  ))
+   (base7      '("#ABABAB" "#c1c1c1" "brightblack"  ))
+   (base8      '("#BABABA" "#ffffff" "brightwhite"  ))
 
-   (grey       '("#43484D" "#515154" "brightblack"  ))
-   (red        '("#FF588F" "#e74c3c" "red"          ))
-   (orange     '("#FFAC62" "#fd971f" "brightred"    ))
-   (green      '("#88DD77" "#b6e63e" "green"        ))
-   (teal       '("#44CC99" "#101010" "green"        ))
-   (yellow     '("#AA7744" "#e2c770" "yellow"       ))
-   (blue       '("#22BBEE" "#2686D6" "brightblue"   ))
-   (dark-blue  '("#5EA4EE" "#727280" "blue"         ))
-   (magenta    '("#FF77CC" "#fb2874" "magenta"      ))
-   (violet     '("#AA77CC" "#9c91e4" "brightmagenta"))
-   (cyan       '("#55CCCC" "#66d9ef" "brightcyan"   ))
-   (dark-cyan  '("#3377BB" "#8FA1B3" "cyan"         ))
+   (grey       '("#5D6666" "#515154" "brightblack"  ))
+   (red        '("#FF484F" "#e74c3c" "red"          ))
+   (orange     '("#FFAC12" "#fd971f" "brightred"    ))
+   (green      '("#B3FF54" "#b6e63e" "green"        ))
+   (teal       '("#64FAB3" "#101010" "green"        ))
+   (yellow     '("#DD9977" "#e2c770" "yellow"       ))
+   (blue       '("#44DDFF" "#2686D6" "brightblue"   ))
+   (dark-blue  '("#1FAAFF" "#727280" "blue"         ))
+   (magenta    '("#FF77BB" "#fb2874" "magenta"      ))
+   (violet     '("#9977BB" "#9c91e4" "brightmagenta"))
+   (cyan       '("#21FFDD" "#66d9ef" "brightcyan"   ))
+   (dark-cyan  '("#7799DD" "#8FA1B3" "cyan"         ))
 
    ;; These are the "universal syntax classes" that doom-themes establishes.
    ;; These *must* be included in every doom themes, or your theme will throw an
@@ -85,10 +85,10 @@ Can be an integer to determine the exact padding."
    (vertical-bar   (doom-lighten bg 0.1))
    (selection      base5)
    (builtin        magenta)
-   (comments       (if doom-newlife-lowcontrast-brighter-comments
+   (comments       (if doom-newlife-brighter-comments
 		       violet
 		     yellow))
-   (doc-comments   (if doom-newlife-lowcontrast-brighter-comments
+   (doc-comments   (if doom-newlife-brighter-comments
                        (doom-lighten violet 0.1)
                      dark-cyan))
    (constants      blue)
@@ -112,13 +112,13 @@ Can be an integer to determine the exact padding."
    ;; mandatory for derived themes.
    (modeline-fg          fg)
    (modeline-fg-alt      base4)
-   (modeline-bg          (if doom-newlife-lowcontrast-brighter-modeline base2 base1))
-   (modeline-bg-inactive (if doom-newlife-lowcontrast-brighter-modeline base3 base2))
+   (modeline-bg          (if doom-newlife-brighter-modeline base2 base1))
+   (modeline-bg-inactive (if doom-newlife-brighter-modeline base3 base2))
    (org-quote `(,(doom-lighten (car bg) 0.05) base1))
 
    (-modeline-pad
-    (when doom-newlife-lowcontrast-padded-modeline
-      (if (integerp doom-newlife-lowcontrast-padded-modeline) doom-newlife-lowcontrast-padded-modeline 4))))
+    (when doom-newlife-padded-modeline
+      (if (integerp doom-newlife-padded-modeline) doom-newlife-padded-modeline 4))))
 
 
   ;;;; Base theme face overrides
@@ -193,4 +193,4 @@ Can be an integer to determine the exact padding."
   ;; ()
   )
 
-;;; doom-newlife-lowcontrast-theme.el ends here
+;;; doom-newlife-theme.el ends here
