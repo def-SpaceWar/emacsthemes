@@ -42,22 +42,22 @@ Can be an integer to determine the exact padding."
   "A dark, vibrant theme inspired by Textmate's Monokai."
 
   ;; name        gui       256       16
-  ((bg         '("#21262B" "black"   "black"        ))
-   (fg         '("#B0B0BF" "#dfdfdf" "brightwhite"  ))
+  ((bg         '("#1F2222" "black"   "black"        ))
+   (fg         '("#BABABA" "#dfdfdf" "brightwhite"  ))
 
    ;; These are off-color variants of bg/fg, used primarily for `solaire-mode',
    ;; but can also be useful as a basis for subtle highlights (e.g. for hl-line
    ;; or region), especially when paired with the `doom-darken', `doom-lighten',
    ;; and `doom-blend' helper functions.
-   (bg-alt     '("#43484D" "black"   "black"        ))
-   (fg-alt     '("#B0BFBF" "#4d4d4d" "white"        ))
+   (bg-alt     '("#3E4444" "black"   "black"        ))
+   (fg-alt     '("#BABABA" "#4d4d4d" "white"        ))
 
    ;; These should represent a spectrum from bg to fg, where base0 is a starker
    ;; bg and base8 is a starker fg. For example, if bg is light grey and fg is
    ;; dark grey, base0 should be white and base8 should be black.
-   (base0      '("#0E1212" "black"   "black"        ))
-   (base1      '("#161919" "#101010" "brightblack"  ))
-   (base2      '("#1F2222" "#191919" "brightblack"  ))
+   (base0      '("#181B1B" "black"   "black"        ))
+   (base1      '("#1F2222" "#101010" "brightblack"  ))
+   (base2      '("#2F3333" "#191919" "brightblack"  ))
    (base3      '("#3E4444" "#252525" "brightblack"  ))
    (base4      '("#5D6666" "#454545" "brightblack"  ))
    (base5      '("#7F7F7F" "#6b6b6b" "brightblack"  ))
