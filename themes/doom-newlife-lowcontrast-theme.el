@@ -42,15 +42,15 @@ Can be an integer to determine the exact padding."
   "A dark, vibrant theme inspired by Textmate's Monokai."
 
   ;; name        gui       256       16
-  ((bg         '("#1c1e1f" "black"   "black"        ))
-   (fg         '("#d6d6d4" "#dfdfdf" "brightwhite"  ))
+  ((bg         '("#21262B" "black"   "black"        ))
+   (fg         '("#B0B0BF" "#dfdfdf" "brightwhite"  ))
 
    ;; These are off-color variants of bg/fg, used primarily for `solaire-mode',
    ;; but can also be useful as a basis for subtle highlights (e.g. for hl-line
    ;; or region), especially when paired with the `doom-darken', `doom-lighten',
    ;; and `doom-blend' helper functions.
-   (bg-alt     '("#222323" "black"   "black"        ))
-   (fg-alt     '("#556172" "#4d4d4d" "white"        ))
+   (bg-alt     '("#43484D" "black"   "black"        ))
+   (fg-alt     '("#B0BFBF" "#4d4d4d" "white"        ))
 
    ;; These should represent a spectrum from bg to fg, where base0 is a starker
    ;; bg and base8 is a starker fg. For example, if bg is light grey and fg is
