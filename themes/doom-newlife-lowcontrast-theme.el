@@ -1,9 +1,9 @@
-;;; doom-newlife-lowcontrast-theme.el --- inspired by Tomas Restrepo's Molokai -*- lexical-binding: t; no-byte-compile: t; -*-
+;;; doom-newlife-lowcontrast-theme.el --- ported from Aryan Ahire's newlife colorscheme pack
 ;;
 ;; Added: September 15, 2016 (32f8b5ae5feb)
 ;; Author: Henrik Lissner <https://github.com/hlissner>
 ;; Maintainer:
-;; Source: https://github.com/tomasr/molokai
+;; Source: https://github.com/def-SpaceWar/newlife.nvim
 ;;
 ;;; Commentary:
 ;;; Code:
@@ -112,23 +112,20 @@ Can be an integer to determine the exact padding."
    ;; mandatory for derived themes.
    (modeline-fg          fg)
    (modeline-fg-alt      base4)
-   (modeline-bg          (if doom-newlife-lowcontrast-brighter-modeline base4 base3))
-   (modeline-bg-inactive (doom-darken (if doom-newlife-lowcontrast-brighter-modeline
-                                          base3
-                                        base2)
-                                      0.2))
-   (org-quote `(,(doom-lighten (car bg) 0.05) "#1f1f1f"))
+   (modeline-bg          (if doom-newlife-lowcontrast-brighter-modeline base2 base1))
+   (modeline-bg-inactive (if doom-newlife-lowcontrast-brighter-modeline base3 base2))
+   (org-quote `(,(doom-lighten (car bg) 0.05) base1))
 
    (-modeline-pad
     (when doom-newlife-lowcontrast-padded-modeline
-      (if (integerp doom-newlife-lowcontrast-padded-modeline) doom-molokai-padded-modeline 4))))
+      (if (integerp doom-newlife-lowcontrast-padded-modeline) doom-newlife-lowcontrast-padded-modeline 4))))
 
 
   ;;;; Base theme face overrides
-  ((cursor :background magenta)
-   (lazy-highlight :background violet :foreground base0 :distant-foreground base0 :bold bold)
-   ((line-number &override) :foreground base5 :distant-foreground nil)
-   ((line-number-current-line &override) :foreground base7 :distant-foreground nil)
+  ((cursor :background red)
+   (lazy-highlight :background magenta :foreground base0 :distant-foreground base0 :bold bold)
+   ((line-number &override) :foreground dark-cyan :distant-foreground nil)
+   ((line-number-current-line &override) :foreground (doom-lighten dark-cyan 0.1) :distant-foreground nil)
    (mode-line
     :background modeline-bg :foreground modeline-fg
     :box (if -modeline-pad `(:line-width ,-modeline-pad :color modeline-bg)))
@@ -144,9 +141,9 @@ Can be an integer to determine the exact padding."
    ;;;; css-mode <built-in> / scss-mode
    (css-proprietary-property :foreground keywords)
    ;;;; doom-modeline
-   (doom-modeline-bar :background green)
+   (doom-modeline-bar :background red)
    (doom-modeline-buffer-file :inherit 'mode-line-buffer-id :weight 'bold)
-   (doom-modeline-buffer-path :inherit 'bold :foreground green)
+   (doom-modeline-buffer-path :inherit 'bold :foreground blue)
    (doom-modeline-buffer-project-root :foreground green :weight 'bold)
    (doom-modeline-buffer-modified :inherit 'bold :foreground orange)
    ;;;; ediff <built-in>
