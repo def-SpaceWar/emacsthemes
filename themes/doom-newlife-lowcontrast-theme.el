@@ -102,9 +102,9 @@ Can be an integer to determine the exact padding."
    (numbers        blue)
    (region         base4)
    (error          red)
-   (warning        yellow)
+   (warning        orange)
    (success        green)
-   (vc-modified    blue)
+   (vc-modified    orange)
    (vc-added       green)
    (vc-deleted     red)
 
