@@ -163,10 +163,10 @@ Can be an integer to determine the exact padding."
    (ivy-current-match :background base3)
    (ivy-minibuffer-match-face-1 :background base1 :foreground base4)
    ;;;; markdown-mode
-   (markdown-blockquote-face :inherit 'italic :foreground dark-blue)
-   (markdown-list-face :foreground magenta)
-   (markdown-pre-face  :foreground cyan)
-   (markdown-link-face :inherit 'bold :foreground blue)
+   (markdown-blockquote-face :inherit 'italic :foreground teal)
+   (markdown-list-face :foreground red)
+   (markdown-pre-face  :foreground blue)
+   (markdown-link-face :inherit 'bold :foreground dark-blue)
    ((markdown-code-face &override) :background (doom-lighten base2 0.045))
    ;;;; neotree
    (neo-dir-link-face   :foreground cyan)
