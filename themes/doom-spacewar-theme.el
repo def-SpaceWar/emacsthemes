@@ -42,31 +42,31 @@ Can be an integer to determine the exact padding."
   "A dark theme based off of doom-one with more spacewar colors."
 
   ;; name        gui       256           16
-  ((bg         '("#252227" "black"       "black" ))
-   (fg         '("#CFDCC2" "#bfbfbf"     "brightwhite" ))
+  ((bg         '("#252226" "black"       "black" ))
+   (fg         '("#CFC8C2" "#bfbfbf"     "brightwhite" ))
 
    ;; These are off-color variants of bg/fg, used primarily for `solaire-mode',
    ;; but can also be useful as a basis for subtle highlights (e.g. for hl-line
    ;; or region), especially when paired with the `doom-darken', `doom-lighten',
    ;; and `doom-blend' helper functions.
-   (bg-alt     '("#363239" "black"       "black"       ))
-   (fg-alt     '("#BECAB2" "#5d5d5d"     "white"       ))
+   (bg-alt     '("#363237" "black"       "black"       ))
+   (fg-alt     '("#BEB7B2" "#5d5d5d"     "white"       ))
 
    ;; These should represent a spectrum from bg to fg, where base0 is a starker
    ;; bg and base8 is a starker fg. For example, if bg is light grey and fg is
    ;; dark grey, base0 should be white and base8 should be black.
    (base0      '("#141215" "#101010"     "black"       ))
-   (base1      '("#252227" "#1e1e1e"     "brightblack" ))
-   (base2      '("#363239" "#21212d"     "brightblack" ))
-   (base3      '("#47424B" "#262626"     "brightblack" ))
-   (base4      '("#8B9482" "#5e5e5e"     "brightblack" ))
-   (base5      '("#9CA692" "#666666"     "brightblack" ))
-   (base6      '("#ADB8A2" "#7b7b7b"     "brightblack" ))
-   (base7      '("#BECAB2" "#979797"     "brightblack" ))
-   (base8      '("#CFDCC2" "#dfdfdf"     "white"       ))
+   (base1      '("#252226" "#1e1e1e"     "brightblack" ))
+   (base2      '("#363237" "#21212d"     "brightblack" ))
+   (base3      '("#474248" "#262626"     "brightblack" ))
+   (base4      '("#8B8482" "#5e5e5e"     "brightblack" ))
+   (base5      '("#9C9592" "#666666"     "brightblack" ))
+   (base6      '("#ADA6A2" "#7b7b7b"     "brightblack" ))
+   (base7      '("#BEB7B2" "#979797"     "brightblack" ))
+   (base8      '("#CFC8C2" "#dfdfdf"     "white"       ))
 
    (grey       '("#58525D" "#5e5e5e" "grey"            ))
-   (red        '("#CB426E" "#ff6655" "red"             ))
+   (red        '("#CF4470" "#ff6655" "red"             ))
    (orange     '("#DD8251" "#dd8844" "brightred"       ))
    (green      '("#AFDF04" "#99bb66" "green"           ))
    (teal       '("#42AAB0" "#44b9b1" "brightgreen"     ))
@@ -87,15 +87,15 @@ Can be an integer to determine the exact padding."
    (builtin        magenta)
    (comments       (if doom-spacewar-brighter-comments dark-cyan base5))
    (doc-comments   (if doom-spacewar-brighter-comments (doom-lighten dark-cyan 0.15) (doom-lighten base4 0.3)))
-   (constants      violet)
+   (constants      green)
    (functions      cyan)
    (keywords       red)
    (methods        violet)
    (operators      magenta)
    (type           yellow)
    (strings        green)
-   (variables      (doom-lighten magenta 0.4))
-   (numbers        orange)
+   (variables      orange)
+   (numbers        green)
    (region         "#3d4451")
    (error          red)
    (warning        yellow)
