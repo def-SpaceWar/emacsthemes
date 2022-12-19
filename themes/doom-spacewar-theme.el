@@ -66,17 +66,17 @@ Can be an integer to determine the exact padding."
    (base8      '("#CFDCC2" "#dfdfdf"     "white"       ))
 
    (grey       '("#58525D" "#5e5e5e" "grey"            ))
-   (red        '("#ff665c" "#ff6655" "red"             ))
-   (orange     '("#e69055" "#dd8844" "brightred"       ))
-   (green      '("#7bc275" "#99bb66" "green"           ))
-   (teal       '("#4db5bd" "#44b9b1" "brightgreen"     ))
-   (yellow     '("#FCCE7B" "#ECBE7B" "yellow"          ))
-   (blue       '("#51afef" "#51afef" "brightblue"      ))
-   (dark-blue  '("#1f5582" "#2257A0" "blue"            ))
-   (magenta    '("#C57BDB" "#c678dd" "brightmagenta"   ))
-   (violet     '("#a991f1" "#a9a1e1" "magenta"         )) ;a9a1e1
-   (cyan       '("#5cEfFF" "#46D9FF" "brightcyan"      ))
-   (dark-cyan  '("#6A8FBF" "#5699AF" "cyan"            ))
+   (red        '("#CB426E" "#ff6655" "red"             ))
+   (orange     '("#DD8251" "#dd8844" "brightred"       ))
+   (green      '("#AFDF54" "#99bb66" "green"           ))
+   (teal       '("#42AAB0" "#44b9b1" "brightgreen"     ))
+   (yellow     '("#FFFF00" "#ECBE7B" "yellow"          ))
+   (blue       '("#3F86FF" "#51afef" "brightblue"      ))
+   (dark-blue  '("#115599" "#2257A0" "blue"            ))
+   (magenta    '("#C065CA" "#c678dd" "brightmagenta"   ))
+   (violet     '("#8F78FF" "#a9a1e1" "magenta"         )) ;a9a1e1
+   (cyan       '("#54DDFF" "#46D9FF" "brightcyan"      ))
+   (dark-cyan  '("#35AACC" "#5699AF" "cyan"            ))
 
    ;; These are the "universal syntax classes" that doom-themes establishes.
    ;; These *must* be included in every doom themes, or your theme will throw an
