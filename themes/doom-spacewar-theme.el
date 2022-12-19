@@ -42,22 +42,22 @@ Can be an integer to determine the exact padding."
   "A dark theme based off of doom-one with more spacewar colors."
 
   ;; name        gui       256           16
-  ((bg         '("#252226" "black"       "black" ))
+  ((bg         '("#242225" "black"       "black" ))
    (fg         '("#CFC8C2" "#bfbfbf"     "brightwhite" ))
 
    ;; These are off-color variants of bg/fg, used primarily for `solaire-mode',
    ;; but can also be useful as a basis for subtle highlights (e.g. for hl-line
    ;; or region), especially when paired with the `doom-darken', `doom-lighten',
    ;; and `doom-blend' helper functions.
-   (bg-alt     '("#363237" "black"       "black"       ))
+   (bg-alt     '("#353337" "black"       "black"       ))
    (fg-alt     '("#BEB7B2" "#5d5d5d"     "white"       ))
 
    ;; These should represent a spectrum from bg to fg, where base0 is a starker
    ;; bg and base8 is a starker fg. For example, if bg is light grey and fg is
    ;; dark grey, base0 should be white and base8 should be black.
    (base0      '("#131214" "#101010"     "black"       ))
-   (base1      '("#242226" "#1e1e1e"     "brightblack" ))
-   (base2      '("#353338" "#21212d"     "brightblack" ))
+   (base1      '("#242225" "#1e1e1e"     "brightblack" ))
+   (base2      '("#353337" "#21212d"     "brightblack" ))
    (base3      '("#46434A" "#262626"     "brightblack" ))
    (base4      '("#8B8482" "#5e5e5e"     "brightblack" ))
    (base5      '("#9C9592" "#666666"     "brightblack" ))
@@ -87,7 +87,7 @@ Can be an integer to determine the exact padding."
    (builtin        magenta)
    (comments       (if doom-spacewar-brighter-comments (doom-lighten dark-cyan 0.3) teal))
    (doc-comments   (if doom-spacewar-brighter-comments (doom-lighten violet 0.3) magenta))
-   (constants      green)
+   (constants      orange)
    (functions      cyan)
    (keywords       red)
    (methods        violet)
@@ -95,7 +95,7 @@ Can be an integer to determine the exact padding."
    (type           yellow)
    (strings        green)
    (variables      orange)
-   (numbers        green)
+   (numbers        violet)
    (region         base2)
    (error          red)
    (warning        yellow)
