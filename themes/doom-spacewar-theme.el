@@ -71,11 +71,11 @@ Can be an integer to determine the exact padding."
    (green      '("#AFDF04" "#99bb66" "green"           ))
    (teal       '("#42AAB0" "#44b9b1" "brightgreen"     ))
    (yellow     '("#FFCD55" "#ECBE7B" "yellow"          ))
-   (blue       '("#3F86FF" "#51afef" "brightblue"      ))
+   (blue       '("#488EFF" "#51afef" "brightblue"      ))
    (dark-blue  '("#115599" "#2257A0" "blue"            ))
    (magenta    '("#C065CA" "#c678dd" "brightmagenta"   ))
    (violet     '("#8F78FF" "#a9a1e1" "magenta"         )) ;a9a1e1
-   (cyan       '("#54DDFF" "#46D9FF" "brightcyan"      ))
+   (cyan       '("#54CCEE" "#46D9FF" "brightcyan"      ))
    (dark-cyan  '("#35AACC" "#5699AF" "cyan"            ))
 
    ;; These are the "universal syntax classes" that doom-themes establishes.
@@ -85,8 +85,8 @@ Can be an integer to determine the exact padding."
    (vertical-bar   base0)
    (selection      dark-blue)
    (builtin        magenta)
-   (comments       (if doom-spacewar-brighter-comments dark-cyan base5))
-   (doc-comments   (if doom-spacewar-brighter-comments (doom-lighten dark-cyan 0.15) (doom-lighten base4 0.3)))
+   (comments       (if doom-spacewar-brighter-comments (doom-lighten dark-cyan 0.3) teal))
+   (doc-comments   (if doom-spacewar-brighter-comments (doom-lighten violet 0.3) magenta))
    (constants      green)
    (functions      cyan)
    (keywords       red)
@@ -96,7 +96,7 @@ Can be an integer to determine the exact padding."
    (strings        green)
    (variables      orange)
    (numbers        green)
-   (region         "#3d4451")
+   (region         base2)
    (error          red)
    (warning        yellow)
    (success        green)
