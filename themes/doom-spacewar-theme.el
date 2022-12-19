@@ -55,18 +55,18 @@ Can be an integer to determine the exact padding."
    ;; These should represent a spectrum from bg to fg, where base0 is a starker
    ;; bg and base8 is a starker fg. For example, if bg is light grey and fg is
    ;; dark grey, base0 should be white and base8 should be black.
-   (base0      '("#141215" "#101010"     "black"       ))
-   (base1      '("#252226" "#1e1e1e"     "brightblack" ))
-   (base2      '("#363237" "#21212d"     "brightblack" ))
-   (base3      '("#474248" "#262626"     "brightblack" ))
+   (base0      '("#131214" "#101010"     "black"       ))
+   (base1      '("#242226" "#1e1e1e"     "brightblack" ))
+   (base2      '("#353338" "#21212d"     "brightblack" ))
+   (base3      '("#46434A" "#262626"     "brightblack" ))
    (base4      '("#8B8482" "#5e5e5e"     "brightblack" ))
    (base5      '("#9C9592" "#666666"     "brightblack" ))
    (base6      '("#ADA6A2" "#7b7b7b"     "brightblack" ))
    (base7      '("#BEB7B2" "#979797"     "brightblack" ))
    (base8      '("#CFC8C2" "#dfdfdf"     "white"       ))
 
-   (grey       '("#58525D" "#5e5e5e" "grey"            ))
-   (red        '("#CF4470" "#ff6655" "red"             ))
+   (grey       '("#57545C" "#5e5e5e" "grey"            ))
+   (red        '("#D14470" "#ff6655" "red"             ))
    (orange     '("#DD8251" "#dd8844" "brightred"       ))
    (green      '("#AFDF04" "#99bb66" "green"           ))
    (teal       '("#42AAB0" "#44b9b1" "brightgreen"     ))
