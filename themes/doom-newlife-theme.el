@@ -39,7 +39,7 @@ Can be an integer to determine the exact padding."
 ;;; Theme definition
 
 (def-doom-theme doom-newlife
-  "A dark, vibrant theme inspired by Textmate's Monokai."
+  "Newlife, inspired by colors of plants."
 
   ;; name        gui       256       16
   ((bg         '("#1F2222" "black"   "black"        ))
