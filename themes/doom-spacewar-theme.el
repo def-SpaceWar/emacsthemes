@@ -42,30 +42,30 @@ Can be an integer to determine the exact padding."
   "A dark theme based off of doom-one with more spacewar colors."
 
   ;; name        gui       256           16
-  ((bg         '("#302237" "black"       "black" ))
-   (fg         '("#bbc2cf" "#bfbfbf"     "brightwhite" ))
+  ((bg         '("#252227" "black"       "black" ))
+   (fg         '("#CFDCC2" "#bfbfbf"     "brightwhite" ))
 
    ;; These are off-color variants of bg/fg, used primarily for `solaire-mode',
    ;; but can also be useful as a basis for subtle highlights (e.g. for hl-line
    ;; or region), especially when paired with the `doom-darken', `doom-lighten',
    ;; and `doom-blend' helper functions.
-   (bg-alt     '("#413249" "black"       "black"       ))
-   (fg-alt     '("#5D656B" "#5d5d5d"     "white"       ))
+   (bg-alt     '("#363239" "black"       "black"       ))
+   (fg-alt     '("#BECAB2" "#5d5d5d"     "white"       ))
 
    ;; These should represent a spectrum from bg to fg, where base0 is a starker
    ;; bg and base8 is a starker fg. For example, if bg is light grey and fg is
    ;; dark grey, base0 should be white and base8 should be black.
-   (base0      '("#1f1225" "#101010"     "black"       ))
-   (base1      '("#302237" "#1e1e1e"     "brightblack" ))
-   (base2      '("#413249" "#21212d"     "brightblack" ))
-   (base3      '("#52425B" "#262626"     "brightblack" ))
-   (base4      '("#484854" "#5e5e5e"     "brightblack" ))
-   (base5      '("#62686E" "#666666"     "brightblack" ))
-   (base6      '("#757B80" "#7b7b7b"     "brightblack" ))
-   (base7      '("#9ca0a4" "#979797"     "brightblack" ))
-   (base8      '("#DFDFDF" "#dfdfdf"     "white"       ))
+   (base0      '("#141215" "#101010"     "black"       ))
+   (base1      '("#252227" "#1e1e1e"     "brightblack" ))
+   (base2      '("#363239" "#21212d"     "brightblack" ))
+   (base3      '("#47424B" "#262626"     "brightblack" ))
+   (base4      '("#8B9482" "#5e5e5e"     "brightblack" ))
+   (base5      '("#9CA692" "#666666"     "brightblack" ))
+   (base6      '("#ADB8A2" "#7b7b7b"     "brightblack" ))
+   (base7      '("#BECAB2" "#979797"     "brightblack" ))
+   (base8      '("#CFDCC2" "#dfdfdf"     "white"       ))
 
-   (grey       base4)
+   (grey       '("#58525D" "#5e5e5e" "grey"            ))
    (red        '("#ff665c" "#ff6655" "red"             ))
    (orange     '("#e69055" "#dd8844" "brightred"       ))
    (green      '("#7bc275" "#99bb66" "green"           ))
