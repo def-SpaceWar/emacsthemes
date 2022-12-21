@@ -92,7 +92,7 @@ Can be an integer to determine the exact padding."
    (keywords       red)
    (methods        violet)
    (operators      magenta)
-   (type           yellow)
+   (type           violet)
    (strings        green)
    (variables      orange)
    (numbers        violet)
