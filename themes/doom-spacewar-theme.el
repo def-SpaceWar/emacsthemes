@@ -87,7 +87,7 @@ Can be an integer to determine the exact padding."
    (selection      violet)
    (builtin        magenta)
    (comments       (if doom-spacewar-brighter-comments (doom-lighten dark-cyan 0.3) teal))
-   (doc-comments   (if doom-spacewar-brighter-comments (doom-lighten violet 0.3) magenta))
+   (doc-comments   (if doom-spacewar-brighter-comments (doom-lighten yellow 0.3) green))
    (constants      blue)
    (functions      cyan)
    (keywords       red)
