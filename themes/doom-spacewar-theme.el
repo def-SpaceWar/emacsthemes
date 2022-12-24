@@ -74,8 +74,8 @@ Can be an integer to determine the exact padding."
    (yellow     '("#EECC54" "#ECBE7B" "yellow"          ))
    (blue       '("#55AAFF" "#51afef" "brightblue"      ))
    (dark-blue  '("#2266AA" "#2257A0" "blue"            ))
-   (magenta    '("#C065CA" "#c678dd" "brightmagenta"   ))
-   (violet     '("#8F78FF" "#a9a1e1" "magenta"         )) ;a9a1e1
+   (magenta    '("#CA67CF" "#c678dd" "brightmagenta"   ))
+   (violet     '("#9F88FF" "#a9a1e1" "magenta"         )) ;a9a1e1
    (cyan       '("#54BBDD" "#46D9FF" "brightcyan"      ))
    (dark-cyan  '("#2499BB" "#5699AF" "cyan"            ))
 
@@ -93,7 +93,7 @@ Can be an integer to determine the exact padding."
    (keywords       red)
    (methods        cyan)
    (operators      magenta)
-   (type           orange)
+   (type           violet)
    (strings        blue)
    (variables      redtwo)
    (numbers        blue)
