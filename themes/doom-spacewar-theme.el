@@ -69,13 +69,13 @@ Can be an integer to determine the exact padding."
    (red        '("#FF5A77" "#ff5577" "red"             ))
    (redtwo     '("#FF5D57" "#ff6655" "red"             ))
    (orange     '("#DD8251" "#dd8844" "brightred"       ))
-   (green      '("#AFDF34" "#99bb66" "green"           ))
+   (green      '("#9FDF54" "#99bb66" "green"           ))
    (teal       '("#53BBC1" "#44b9b1" "brightgreen"     ))
    (yellow     '("#EECC54" "#ECBE7B" "yellow"          ))
    (blue       '("#55AAFF" "#51afef" "brightblue"      ))
    (dark-blue  '("#2266AA" "#2257A0" "blue"            ))
-   (magenta    '("#CA67CF" "#c678dd" "brightmagenta"   ))
-   (violet     '("#9F88FF" "#a9a1e1" "magenta"         )) ;a9a1e1
+   (magenta    '("#EC89F1" "#c678dd" "brightmagenta"   ))
+   (violet     '("#AF9FFF" "#a9a1e1" "magenta"         )) ;a9a1e1
    (cyan       '("#54BBDD" "#46D9FF" "brightcyan"      ))
    (dark-cyan  '("#2499BB" "#5699AF" "cyan"            ))
 
