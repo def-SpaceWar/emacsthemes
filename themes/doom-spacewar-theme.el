@@ -66,7 +66,7 @@ Can be an integer to determine the exact padding."
    (base8      '("#CFC8C2" "#dfdfdf"     "white"       ))
 
    (grey       '("#57545C" "#5e5e5e" "grey"            ))
-   (red        '("#D14470" "#ff5577" "red"             ))
+   (red        '("#FF5A77" "#ff5577" "red"             ))
    (redtwo     '("#FF5D57" "#ff6655" "red"             ))
    (orange     '("#DD8251" "#dd8844" "brightred"       ))
    (green      '("#AFDF34" "#99bb66" "green"           ))
