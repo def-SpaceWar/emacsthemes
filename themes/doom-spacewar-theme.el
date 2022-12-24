@@ -76,27 +76,27 @@ Can be an integer to determine the exact padding."
    (dark-blue  '("#2266AA" "#2257A0" "blue"            ))
    (magenta    '("#C065CA" "#c678dd" "brightmagenta"   ))
    (violet     '("#8F78FF" "#a9a1e1" "magenta"         )) ;a9a1e1
-   (cyan       '("#54CCEE" "#46D9FF" "brightcyan"      ))
-   (dark-cyan  '("#35AACC" "#5699AF" "cyan"            ))
+   (cyan       '("#54BBDD" "#46D9FF" "brightcyan"      ))
+   (dark-cyan  '("#2499BB" "#5699AF" "cyan"            ))
 
    ;; These are the "universal syntax classes" that doom-themes establishes.
    ;; These *must* be included in every doom themes, or your theme will throw an
    ;; error, as they are used in the base theme defined in doom-themes-base.
    (highlight      cyan)
    (vertical-bar   base0)
-   (selection      dark-blue)
+   (selection      violet)
    (builtin        magenta)
    (comments       (if doom-spacewar-brighter-comments (doom-lighten dark-cyan 0.3) teal))
    (doc-comments   (if doom-spacewar-brighter-comments (doom-lighten violet 0.3) magenta))
-   (constants      orange)
-   (functions      blue)
+   (constants      blue)
+   (functions      cyan)
    (keywords       red)
-   (methods        blue)
+   (methods        cyan)
    (operators      magenta)
-   (type           violet)
-   (strings        orange)
+   (type           orange)
+   (strings        blue)
    (variables      redtwo)
-   (numbers        orange)
+   (numbers        blue)
    (region         base2)
    (error          red)
    (warning        yellow)
@@ -108,7 +108,7 @@ Can be an integer to determine the exact padding."
    ;; These are extra color variables used only in this theme; i.e. they aren't
    ;; mandatory for derived themes.
    (modeline-fg             fg)
-   (modeline-fg-inactive    (doom-blend blue grey (if doom-spacewar-brighter-modeline 0.9 0.2)))
+   (modeline-fg-inactive    (doom-blend violet grey (if doom-spacewar-brighter-modeline 0.9 0.2)))
    (modeline-bg             (if doom-spacewar-brighter-modeline
                                 `("#383f58" ,@(cdr base1))
                               `(,(doom-darken (car bg) 0.15) ,@(cdr base1))))
@@ -127,7 +127,7 @@ Can be an integer to determine the exact padding."
   (((font-lock-comment-face &override)
     :background (if doom-spacewar-brighter-comments (doom-darken bg-alt 0.095)))
    ((line-number &override) :foreground base4)
-   ((line-number-current-line &override) :foreground blue :bold bold)
+   ((line-number-current-line &override) :foreground violet :bold bold)
    (mode-line
     :background modeline-bg :foreground modeline-fg
     :box (if -modeline-pad `(:line-width ,-modeline-pad :color ,modeline-bg)))
