@@ -81,7 +81,7 @@ Can be an integer to determine the exact padding."
    ;; These are the "universal syntax classes" that doom-themes establishes.
    ;; These *must* be included in every doom themes, or your theme will throw an
    ;; error, as they are used in the base theme defined in doom-themes-base.
-   (highlight      cyan)
+   (highlight      teal)
    (vertical-bar   base0)
    (selection      dark-blue)
    (builtin        magenta)
