@@ -55,15 +55,15 @@ Can be an integer to determine the exact padding."
    ;; These should represent a spectrum from bg to fg, where base0 is a starker
    ;; bg and base8 is a starker fg. For example, if bg is light grey and fg is
    ;; dark grey, base0 should be white and base8 should be black.
-   (base0      '("#131214" "#101010"     "black"       ))
-   (base1      '("#141215" "#1e1e1e"     "brightblack" ))
-   (base2      '("#252327" "#21212d"     "brightblack" ))
-   (base3      '("#36333A" "#262626"     "brightblack" ))
-   (base4      '("#8B8482" "#5e5e5e"     "brightblack" ))
-   (base5      '("#9C9592" "#666666"     "brightblack" ))
-   (base6      '("#ADA6A2" "#7b7b7b"     "brightblack" ))
-   (base7      '("#BEB7B2" "#979797"     "brightblack" ))
-   (base8      '("#CFC8C2" "#dfdfdf"     "white"       ))
+   (base0      '("#131215" "#101010"     "black"       ))
+   (base1      '("#141216" "#1e1e1e"     "brightblack" ))
+   (base2      '("#252328" "#21212d"     "brightblack" ))
+   (base3      '("#36333B" "#262626"     "brightblack" ))
+   (base4      '("#8B8483" "#5e5e5e"     "brightblack" ))
+   (base5      '("#9C9593" "#666666"     "brightblack" ))
+   (base6      '("#ADA6A3" "#7b7b7b"     "brightblack" ))
+   (base7      '("#BEB7B3" "#979797"     "brightblack" ))
+   (base8      '("#CFC8C3" "#dfdfdf"     "white"       ))
 
    (grey       '("#57545C" "#5e5e5e" "grey"            ))
    (red        '("#FF5A77" "#ff5577" "red"             ))
@@ -75,7 +75,7 @@ Can be an integer to determine the exact padding."
    (blue       '("#55AAFF" "#51afef" "brightblue"      ))
    (dark-blue  '("#2266AA" "#2257A0" "blue"            ))
    (magenta    '("#EC89F1" "#c678dd" "brightmagenta"   ))
-   (violet     '("#AF8FFF" "#a9a1e1" "magenta"         )) ;a9a1e1
+   (violet     '("#AF8FFF" "#a9a1e1" "magenta"         ))
    (cyan       '("#54BBDD" "#46D9FF" "brightcyan"      ))
    (dark-cyan  '("#2499BB" "#5699AF" "cyan"            ))
 
@@ -85,7 +85,7 @@ Can be an integer to determine the exact padding."
    (highlight      cyan)
    (vertical-bar   base0)
    (selection      violet)
-   (builtin        magenta)
+   (builtin        red)
    (comments       (if doom-spacewar-brighter-comments (doom-lighten dark-cyan 0.3) teal))
    (doc-comments   (if doom-spacewar-brighter-comments (doom-lighten yellow 0.3) green))
    (constants      blue)
@@ -164,7 +164,15 @@ Can be an integer to determine the exact padding."
     :background modeline-bg-alt-inactive
     :box (if -modeline-pad `(:line-width ,-modeline-pad :color ,modeline-bg-alt-inactive)))
    ;;;; whitespace <built-in>
-   (whitespace-empty :background base2))
+   (whitespace-empty :background base2)
+   ;;;; rainbow-delimiters
+   (rainbow-delimiters-depth-1-face :foreground red)
+   (rainbow-delimiters-depth-2-face :foreground red2)
+   (rainbow-delimiters-depth-3-face :foreground green)
+   (rainbow-delimiters-depth-4-face :foreground cyan)
+   (rainbow-delimiters-depth-5-face :foreground blue)
+   (rainbow-delimiters-depth-6-face :foreground magenta)
+   (rainbow-delimiters-depth-7-face :foreground violet))
 
   ;;;; Base theme variable overrides
   ;; ()
