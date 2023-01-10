@@ -165,14 +165,23 @@ Can be an integer to determine the exact padding."
     :box (if -modeline-pad `(:line-width ,-modeline-pad :color ,modeline-bg-alt-inactive)))
    ;;;; whitespace <built-in>
    (whitespace-empty :background base2)
+   ;;;; outline <built-in>
+   ((outline-1 &override) :foreground red)
+   ((outline-2 &override) :foreground orange)
+   ((outline-3 &override) :foreground green)
+   ((outline-4 &override) :foreground cyan)
+   ((outline-5 &override) :foreground blue)
+   ((outline-6 &override) :foreground magenta)
+   ((outline-7 &override) :foreground violet)
    ;;;; rainbow-delimiters
    (rainbow-delimiters-depth-1-face :foreground red)
-   (rainbow-delimiters-depth-2-face :foreground redtwo)
+   (rainbow-delimiters-depth-2-face :foreground orange)
    (rainbow-delimiters-depth-3-face :foreground green)
    (rainbow-delimiters-depth-4-face :foreground cyan)
    (rainbow-delimiters-depth-5-face :foreground blue)
    (rainbow-delimiters-depth-6-face :foreground magenta)
-   (rainbow-delimiters-depth-7-face :foreground violet))
+   (rainbow-delimiters-depth-7-face :foreground violet)
+   )
 
   ;;;; Base theme variable overrides
   ;; ()
