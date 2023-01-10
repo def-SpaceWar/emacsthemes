@@ -167,7 +167,7 @@ Can be an integer to determine the exact padding."
    (whitespace-empty :background base2)
    ;;;; rainbow-delimiters
    (rainbow-delimiters-depth-1-face :foreground red)
-   (rainbow-delimiters-depth-2-face :foreground red2)
+   (rainbow-delimiters-depth-2-face :foreground redtwo)
    (rainbow-delimiters-depth-3-face :foreground green)
    (rainbow-delimiters-depth-4-face :foreground cyan)
    (rainbow-delimiters-depth-5-face :foreground blue)
