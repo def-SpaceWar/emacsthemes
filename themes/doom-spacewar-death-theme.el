@@ -77,6 +77,7 @@ Can be an integer to determine the exact padding."
    (yellow     '("#FFFF00" "#c678dd" "brightmagenta"   ))
    (green      '("#00FF00" "#a9a1e1" "magenta"         ))
    (orange     '("#FF9900" "#46D9FF" "brightcyan"      ))
+   (cyan       '("#00FFFF" "#5699AF" "cyan"            ))
    (white      '("#ffffff" "#5699AF" "cyan"            ))
 
    ;; These are the "universal syntax classes" that doom-themes establishes.
