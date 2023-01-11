@@ -80,7 +80,8 @@ Can be an integer to determine the exact padding."
    (orange     '("#FF9900" "#46D9FF" "brightcyan"      ))
    (cyan       '("#00FFFF" "#5699AF" "cyan"            ))
    (dark-blue  '("#000088" "#5699AF" "cyan"            ))
-   (dark-cyan  '("#007F80" "#5699AF" "cyan"            ))
+   (dark-cyan  '("#0090C0" "#5699AF" "cyan"            ))
+   (teal       '("#007F80" "#5699AF" "cyan"            ))
    (white      '("#ffffff" "#5699AF" "cyan"            ))
 
    ;; These are the "universal syntax classes" that doom-themes establishes.
