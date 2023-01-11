@@ -72,8 +72,8 @@ Can be an integer to determine the exact padding."
    (blue       '("#0000FF" "#99bb66" "green"           ))
    (bluetwo    '("#4400DD" "#44b9b1" "brightgreen"     ))
    (bluethree  '("#3300BB" "#ECBE7B" "yellow"          ))
-   (purple     '("#7700FF" "#51afef" "brightblue"      ))
-   (purpletwo  '("#AA00CC" "#2257A0" "blue"            ))
+   (violet     '("#8800FF" "#51afef" "brightblue"      ))
+   (violettwo  '("#AA00DD" "#2257A0" "blue"            ))
    (magenta    '("#FF00FF" "#2257A0" "blue"            ))
    (yellow     '("#FFFF00" "#c678dd" "brightmagenta"   ))
    (green      '("#00FF00" "#a9a1e1" "magenta"         ))
@@ -84,19 +84,19 @@ Can be an integer to determine the exact padding."
    ;; These are the "universal syntax classes" that doom-themes establishes.
    ;; These *must* be included in every doom themes, or your theme will throw an
    ;; error, as they are used in the base theme defined in doom-themes-base.
-   (highlight      purple)
+   (highlight      violet)
    (vertical-bar   base0)
    (selection      blue)
-   (builtin        purple)
+   (builtin        violet)
    ;(comments       (if doom-spacewar-death-brighter-comments (doom-lighten dark-cyan 0.2) teal))
    ;(doc-comments   (if doom-spacewar-death-brighter-comments (doom-lighten yellow 0.2) green))
    (comments       grey)
-   (doc-comments   purpletwo)
+   (doc-comments   violettwo)
    (constants      blue)
-   (functions      purple)
+   (functions      violet)
    (keywords       redthree)
-   (methods        purple)
-   (operators      purpletwo)
+   (methods        violet)
+   (operators      violettwo)
    (type           red)
    (strings        bluetwo)
    (variables      white)
@@ -112,7 +112,7 @@ Can be an integer to determine the exact padding."
    ;; These are extra color variables used only in this theme; i.e. they aren't
    ;; mandatory for derived themes.
    (modeline-fg             fg)
-   (modeline-fg-inactive    (doom-blend purple grey (if doom-spacewar-death-brighter-modeline 0.9 0.2)))
+   (modeline-fg-inactive    (doom-blend violet grey (if doom-spacewar-death-brighter-modeline 0.9 0.2)))
    (modeline-bg             (if doom-spacewar-death-brighter-modeline
                                 `("#383f58" ,@(cdr base1))
                               `(,(doom-darken (car bg) 0.15) ,@(cdr base1))))
@@ -131,7 +131,7 @@ Can be an integer to determine the exact padding."
   (((font-lock-comment-face &override)
     :background (if doom-spacewar-death-brighter-comments (doom-darken bg-alt 0.095)))
    ((line-number &override) :foreground base4)
-   ((line-number-current-line &override) :foreground purple :bold bold)
+   ((line-number-current-line &override) :foreground violet :bold bold)
    (mode-line
     :background modeline-bg :foreground modeline-fg
     :box (if -modeline-pad `(:line-width ,-modeline-pad :color ,modeline-bg)))
@@ -176,8 +176,8 @@ Can be an integer to determine the exact padding."
    ((outline-4 &override) :foreground blue)
    ((outline-5 &override) :foreground bluetwo)
    ((outline-6 &override) :foreground bluethree)
-   ((outline-7 &override) :foreground purple)
-   ((outline-8 &override) :foreground purpletwo)
+   ((outline-7 &override) :foreground violet)
+   ((outline-8 &override) :foreground violettwo)
    ;;;; rainbow-delimiters
    (rainbow-delimiters-depth-1-face :foreground red)
    (rainbow-delimiters-depth-2-face :foreground redtwo)
@@ -185,8 +185,8 @@ Can be an integer to determine the exact padding."
    (rainbow-delimiters-depth-4-face :foreground blue)
    (rainbow-delimiters-depth-5-face :foreground bluetwo)
    (rainbow-delimiters-depth-6-face :foreground bluethree)
-   (rainbow-delimiters-depth-7-face :foreground purple)
-   (rainbow-delimiters-depth-8-face :foreground purpletwo)
+   (rainbow-delimiters-depth-7-face :foreground violet)
+   (rainbow-delimiters-depth-8-face :foreground violettwo)
    )
 
   ;;;; Base theme variable overrides
