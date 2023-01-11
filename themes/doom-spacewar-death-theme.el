@@ -74,6 +74,7 @@ Can be an integer to determine the exact padding."
    (bluethree  '("#3300BB" "#ECBE7B" "yellow"          ))
    (purple     '("#7700FF" "#51afef" "brightblue"      ))
    (purpletwo  '("#AA00CC" "#2257A0" "blue"            ))
+   (magenta    '("#FF00FF" "#2257A0" "blue"            ))
    (yellow     '("#FFFF00" "#c678dd" "brightmagenta"   ))
    (green      '("#00FF00" "#a9a1e1" "magenta"         ))
    (orange     '("#FF9900" "#46D9FF" "brightcyan"      ))
