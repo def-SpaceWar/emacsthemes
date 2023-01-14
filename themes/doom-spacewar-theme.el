@@ -103,7 +103,7 @@ Can be an integer to determine the exact padding."
    (success        green)
    (vc-modified    yellow)
    (vc-added       green)
-   (vc-deleted     red2two)
+   (vc-deleted     redtwo)
 
    ;; These are extra color variables used only in this theme; i.e. they aren't
    ;; mandatory for derived themes.
