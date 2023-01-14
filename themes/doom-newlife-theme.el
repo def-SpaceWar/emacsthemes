@@ -1,4 +1,4 @@
-;;; doom-newlife-theme.el --- ported from Aryan Ahire's newlife colorscheme pack
+;;; doom-newlife-theme.el --- ported from Aryan Ahire's newlife colorscheme pack -*- lexical-binding: t; no-byte-compile: t; -*-
 ;;
 ;; Added:
 ;; Author:
