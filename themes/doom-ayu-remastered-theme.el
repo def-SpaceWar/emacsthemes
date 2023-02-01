@@ -45,8 +45,8 @@ Can be an integer to determine the exact padding."
   ;; name        default   256           16
   (;; common
    (common-accent   '("#e6b450" "orange"  "orange" ))
-   (common-bg       '("#0d1027" "black"   "black"  ))
-   (common-line     '("#131731" "grey"    "grey"  ))
+   (common-bg       '("#111317" "black"   "black"  ))
+   (common-line     '("#202226" "grey"    "grey"  ))
    (common-fg       '("#bfbdb6" "grey"    "grey"   ))
    (common-ui       '("#565b66" "grey"    "grey"   ))
    (test            '("#73b8ff" "grey"    "grey"   ))
