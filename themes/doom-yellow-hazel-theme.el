@@ -45,24 +45,24 @@ Can be an integer to determine the exact padding."
   "A dark theme inspired by Atom One Dark."
 
   ;; name        default   256           16
-  ((bg         '("#1F1F1F" "black"       "black"  ))
+  ((bg         '("#121212" "black"       "black"  ))
    (fg         '("#BBBBBB" "#bfbfbf"     "brightwhite"  ))
 
    ;; These are off-color variants of bg/fg, used primarily for `solaire-mode',
    ;; but can also be useful as a basis for subtle highlights (e.g. for hl-line
    ;; or region), especially when paired with the `doom-darken', `doom-lighten',
    ;; and `doom-blend' helper functions.
-   (bg-alt     '("#313131" "black"       "black"        ))
+   (bg-alt     '("#1F1F1F" "black"       "black"        ))
    (fg-alt     '("#ACACAC" "#2d2d2d"     "white"        ))
 
    ;; These should represent a spectrum from bg to fg, where base0 is a starker
    ;; bg and base8 is a starker fg. For example, if bg is light grey and fg is
    ;; dark grey, base0 should be white and base8 should be black.
-   (base0      '("#1F1F1F" "black"       "black"        ))
-   (base1      '("#313131" "#1e1e1e"     "brightblack"  ))
-   (base2      '("#434343" "#2e2e2e"     "brightblack"  ))
-   (base3      '("#555555" "#262626"     "brightblack"  ))
-   (base4      '("#787878" "#3f3f3f"     "brightblack"  ))
+   (base0      '("#121212" "black"       "black"        ))
+   (base1      '("#1F1F1F" "#1e1e1e"     "brightblack"  ))
+   (base2      '("#313131" "#2e2e2e"     "brightblack"  ))
+   (base3      '("#434343" "#262626"     "brightblack"  ))
+   (base4      '("#555555" "#3f3f3f"     "brightblack"  ))
    (base5      '("#8E8E8E" "#525252"     "brightblack"  ))
    (base6      '("#9D9D9D" "#6b6b6b"     "brightblack"  ))
    (base7      '("#ACACAC" "#979797"     "brightblack"  ))
@@ -70,7 +70,7 @@ Can be an integer to determine the exact padding."
 
    (grey       base4)
    (red        '("#FF7283" "#ff6655" "red"          ))
-   (orange     '("#FFBB88" "#dd8844" "brightred"    ))
+   (orange     '("#885522" "#dd8844" "brightred"    ))
    (green      '("#879278" "#99bb66" "green"        ))
    (teal       '("#55BB99" "#44b9b1" "brightgreen"  ))
    (yellow     '("#EECC11" "#ECBE7B" "yellow"       ))
