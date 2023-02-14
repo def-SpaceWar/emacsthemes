@@ -140,19 +140,19 @@ Can be an integer to determine the exact padding."
 
    ;;;; css-mode <built-in> / scss-mode
    (css-proprietary-property :foreground orange)
-   (css-property             :foreground green)
+   (css-property             :foreground teal)
    (css-selector             :foreground blue)
    ;;;; doom-modeline
    (doom-modeline-bar :background (if doom-yellow-hazel-brighter-modeline modeline-bg highlight))
    (doom-modeline-buffer-file :inherit 'mode-line-buffer-id :weight 'bold)
    (doom-modeline-buffer-path :inherit 'mode-line-emphasis :weight 'bold)
-   (doom-modeline-buffer-project-root :foreground green :weight 'bold)
+   (doom-modeline-buffer-project-root :foreground teal :weight 'bold)
    ;;;; elscreen
    (elscreen-tab-other-screen-face :background "#353a42" :foreground "#1e2022")
    ;;;; ivy
    (ivy-current-match :background dark-blue :distant-foreground base0 :weight 'normal)
    ;;;; LaTeX-mode
-   (font-latex-math-face :foreground green)
+   (font-latex-math-face :foreground teal)
    ;;;; markdown-mode
    (markdown-markup-face :foreground base5)
    (markdown-header-face :inherit 'bold :foreground red)
