@@ -1,13 +1,13 @@
-;;; doom-yellow-hazel-theme.el --- inspired by Atom One Dark -*- lexical-binding: t; no-byte-compile: t; -*-
+;;; doom-yellow-hazel-theme.el --- inspired by Gruber Darker -*- lexical-binding: t; no-byte-compile: t; -*-
 ;;
-;; Added: May 23, 2016 (28620647f838)
-;; Author: Henrik Lissner <https://github.com/hlissner>
-;; Maintainer: Henrik Lissner <https://github.com/hlissner>
-;; Source: https://github.com/atom/one-dark-ui
+;; Added:
+;; Author:
+;; Maintainer:
+;; Source:
 ;;
 ;;; Commentary:
 ;;
-;; This themepack's flagship theme.
+;; Insert stuff
 ;;
 ;;; Code:
 
@@ -42,7 +42,7 @@ Can be an integer to determine the exact padding."
 ;;; Theme definition
 
 (def-doom-theme doom-yellow-hazel
-  "A dark theme inspired by Atom One Dark."
+  "A dark theme inspired by Gruber Darker"
 
   ;; name        default   256           16
   ((bg         '("#121212" "black"       "black"  ))
@@ -94,12 +94,12 @@ Can be an integer to determine the exact padding."
    (functions      blue)
    (keywords       yellow)
    (methods        blue)
-   (operators      yellow)
+   (operators      red)
    (type           green)
    (strings        cyan)
    (variables      magenta)
    (numbers        teal)
-   (region         `(,(doom-lighten (car bg-alt) 0.15) ,@(doom-lighten (cdr base1) 0.35)))
+   (region         base2)
    (error          red)
    (warning        yellow)
    (success        teal)
