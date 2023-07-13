@@ -109,21 +109,20 @@ Can be an integer to determine the exact padding."
 
    ;; These are extra color variables used only in this theme; i.e. they aren't
    ;; mandatory for derived themes.
-   ;(modeline-fg              fg)
-   ;(modeline-fg-alt          base5)
-   ;(modeline-bg              (if doom-blazing-brighter-modeline
-   ;                              (doom-darken blue 0.45)
-   ;                            (doom-darken bg-alt 0.1)))
-   ;(modeline-bg-alt          (if doom-blazing-brighter-modeline
-   ;                              (doom-darken blue 0.475)
-   ;                            `(,(doom-darken (car bg-alt) 0.15) ,@(cdr bg))))
-   ;(modeline-bg-inactive     `(,(car bg-alt) ,@(cdr base1)))
-   ;(modeline-bg-inactive-alt `(,(doom-darken (car bg-alt) 0.1) ,@(cdr bg)))
+   (modeline-fg              fg)
+   (modeline-fg-alt          base5)
+   (modeline-bg              (if doom-blazing-brighter-modeline
+                                 (doom-darken blue 0.45)
+                               (doom-darken bg-alt 0.1)))
+   (modeline-bg-alt          (if doom-blazing-brighter-modeline
+                                 (doom-darken blue 0.475)
+                               `(,(doom-darken (car bg-alt) 0.15) ,@(cdr bg))))
+   (modeline-bg-inactive     `(,(car bg-alt) ,@(cdr base1)))
+   (modeline-bg-inactive-alt `(,(doom-darken (car bg-alt) 0.1) ,@(cdr bg)))
 
-   ;(-modeline-pad
-   ; (when doom-blazing-padded-modeline
-   ;   (if (integerp doom-blazing-padded-modeline) doom-blazing-padded-modeline 4)))
-   )
+   (-modeline-pad
+    (when doom-blazing-padded-modeline
+      (if (integerp doom-blazing-padded-modeline) doom-blazing-padded-modeline 4))))
 
 
   ;;;; Base theme face overrides
@@ -140,37 +139,36 @@ Can be an integer to determine the exact padding."
    (mode-line-emphasis :foreground (if doom-blazing-brighter-modeline base8 highlight))
 
    ;;;; css-mode <built-in> / scss-mode
-   ;(css-proprietary-property :foreground orange)
-   ;(css-property             :foreground teal)
-   ;(css-selector             :foreground blue)
+   (css-proprietary-property :foreground orange)
+   (css-property             :foreground teal)
+   (css-selector             :foreground blue)
    ;;;; doom-modeline
-   ;(doom-modeline-bar :background (if doom-blazing-brighter-modeline modeline-bg highlight))
-   ;(doom-modeline-buffer-file :inherit 'mode-line-buffer-id :weight 'bold)
-   ;(doom-modeline-buffer-path :inherit 'mode-line-emphasis :weight 'bold)
-   ;(doom-modeline-buffer-project-root :foreground teal :weight 'bold)
+   (doom-modeline-bar :background (if doom-blazing-brighter-modeline modeline-bg highlight))
+   (doom-modeline-buffer-file :inherit 'mode-line-buffer-id :weight 'bold)
+   (doom-modeline-buffer-path :inherit 'mode-line-emphasis :weight 'bold)
+   (doom-modeline-buffer-project-root :foreground teal :weight 'bold)
    ;;;; elscreen
-   ;(elscreen-tab-other-screen-face :background "#353a42" :foreground "#1e2022")
+   (elscreen-tab-other-screen-face :background "#353a42" :foreground "#1e2022")
    ;;;; ivy
-   ;(ivy-current-match :background dark-blue :distant-foreground base0 :weight 'normal)
+   (ivy-current-match :background dark-blue :distant-foreground base0 :weight 'normal)
    ;;;; LaTeX-mode
-   ;(font-latex-math-face :foreground teal)
+   (font-latex-math-face :foreground teal)
    ;;;; markdown-mode
-   ;(markdown-markup-face :foreground base5)
-   ;(markdown-header-face :inherit 'bold :foreground red)
-   ;((markdown-code-face &override) :background base2)
+   (markdown-markup-face :foreground base5)
+   (markdown-header-face :inherit 'bold :foreground red)
+   ((markdown-code-face &override) :background base2)
    ;;;; rjsx-mode
-   ;(rjsx-tag :foreground red)
-   ;(rjsx-attr :foreground orange)
+   (rjsx-tag :foreground red)
+   (rjsx-attr :foreground orange)
    ;;;; solaire-mode
-   ;(solaire-mode-line-face
-   ; :inherit 'mode-line
-   ; :background modeline-bg-alt
-   ; :box (if -modeline-pad `(:line-width ,-modeline-pad :color ,modeline-bg-alt)))
-   ;(solaire-mode-line-inactive-face
-   ; :inherit 'mode-line-inactive
-   ; :background modeline-bg-inactive-alt
-   ; :box (if -modeline-pad `(:line-width ,-modeline-pad :color ,modeline-bg-inactive-alt)))
-   )
+   (solaire-mode-line-face
+    :inherit 'mode-line
+    :background modeline-bg-alt
+    :box (if -modeline-pad `(:line-width ,-modeline-pad :color ,modeline-bg-alt)))
+   (solaire-mode-line-inactive-face
+    :inherit 'mode-line-inactive
+    :background modeline-bg-inactive-alt
+    :box (if -modeline-pad `(:line-width ,-modeline-pad :color ,modeline-bg-inactive-alt))))
 
   ;;;; Base theme variable overrides-
   ())
