@@ -80,6 +80,7 @@ Can be an integer to determine the exact padding."
    (violet     '("#DD88FF" "#a9a1e1" "magenta"      ))
    (cyan       '("#33DDDD" "#46D9FF" "brightcyan"   ))
    (dark-cyan  '("#33DDDD" "#5699AF" "cyan"         ))
+   (grey       '("#6D7248" "#999999" "grey"         ))
 
    ;; These are the "universal syntax classes" that doom-themes establishes.
    ;; These *must* be included in every doom themes, or your theme will throw an
@@ -88,8 +89,8 @@ Can be an integer to determine the exact padding."
    (vertical-bar   (doom-darken base1 0.1))
    (selection      dark-blue)
    (builtin        red)
-   (comments       (doom-darken orange 0.5))
-   (doc-comments   yellow)
+   (comments       grey)
+   (doc-comments   blue)
    (constants      violet)
    (functions      green)
    (keywords       magenta)
@@ -110,7 +111,7 @@ Can be an integer to determine the exact padding."
    ;; These are extra color variables used only in this theme; i.e. they aren't
    ;; mandatory for derived themes.
    (modeline-fg              fg)
-   (modeline-fg-alt          base5)
+   (modeline-fg-alt          fg-alt)
    (modeline-bg              (if doom-blazing-brighter-modeline
                                  (doom-darken blue 0.45)
                                (doom-darken bg-alt 0.1)))
