@@ -98,7 +98,7 @@ Can be an integer to determine the exact padding."
    (operators      magenta)
    (type           teal)
    (strings        yellow)
-   (variables      fg)
+   (variables      orange)
    (numbers        violet)
    (region         base1)
    (error          red)
