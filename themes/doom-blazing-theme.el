@@ -85,14 +85,14 @@ Can be an integer to determine the exact padding."
    ;; These are the "universal syntax classes" that doom-themes establishes.
    ;; These *must* be included in every doom themes, or your theme will throw an
    ;; error, as they are used in the base theme defined in doom-themes-base.
-   (highlight      blue)
+   (highlight      green)
    (vertical-bar   (doom-darken base1 0.1))
    (selection      magenta)
    (builtin        red)
    (comments       grey)
    (doc-comments   blue)
    (constants      violet)
-   (functions      green)
+   (functions      blue)
    (keywords       magenta)
    (methods        green)
    (operators      magenta)
@@ -151,7 +151,7 @@ Can be an integer to determine the exact padding."
    ;;;; elscreen
    (elscreen-tab-other-screen-face :background "#353a42" :foreground "#1e2022")
    ;;;; ivy
-   (ivy-current-match :background dark-blue :distant-foreground base0 :weight 'normal)
+   (ivy-current-match :background magenta :distant-foreground base0 :weight 'normal)
    ;;;; LaTeX-mode
    (font-latex-math-face :foreground teal)
    ;;;; markdown-mode
