@@ -114,7 +114,7 @@ Can be an integer to determine the exact padding."
    (modeline-fg-alt          fg-alt)
    (modeline-bg              (if doom-blazing-brighter-modeline
                                  (doom-darken blue 0.45)
-                                 bg-alt))
+                                 base0))
    (modeline-bg-alt          (if doom-blazing-brighter-modeline
                                  (doom-darken blue 0.475)
                                `(,(doom-darken (car bg-alt) 0.15) ,@(cdr bg))))
